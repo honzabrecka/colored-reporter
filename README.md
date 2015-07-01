@@ -12,9 +12,9 @@ An alternative reporter for cljs.test using colors.
 
 ```clojure
 (:require [cljs.test :refer-macros [run-tests]]
-          [colored-reporter.core])
+          [jx.reporter.colored])
 
 (run-tests
-  (cljs.test/empty-env :colored-reporter.core/colors)
+  (cljs.test/empty-env :jx.reporter.colored/colored)
   'foo.bar)
 ```

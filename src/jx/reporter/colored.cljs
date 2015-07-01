@@ -1,4 +1,4 @@
-(ns colored-reporter.core
+(ns jx.reporter.colored
   (:require [cljs.nodejs :as node]
             [cljs.test]))
 
@@ -25,20 +25,20 @@
        ", pass: " (:pass m)
        " (tests run: " (:test m) ")"))
 
-(defmethod cljs.test/report :colors [m])
+(defmethod cljs.test/report :colored [m])
 
-(defmethod cljs.test/report [::colors :pass] [m]
+(defmethod cljs.test/report [::colored :pass] [m]
   (cljs.test/inc-report-counter! :pass))
 
-(defmethod cljs.test/report [::colors :fail] [m]
+(defmethod cljs.test/report [::colored :fail] [m]
   (cljs.test/inc-report-counter! :fail)
   (print-formated! "FAIL" m))
 
-(defmethod cljs.test/report [::colors :error] [m]
+(defmethod cljs.test/report [::colored :error] [m]
   (cljs.test/inc-report-counter! :error)
   (print-formated! "ERROR" m))
 
-(defmethod cljs.test/report [::colors :end-run-tests] [m]
+(defmethod cljs.test/report [::colored :end-run-tests] [m]
   (if (cljs.test/successful? m)
     (do (println (.green colors "OK!")
                  (format-summary m))
