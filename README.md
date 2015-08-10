@@ -2,7 +2,7 @@
 
 An alternative reporter for cljs.test using colors.
 
-## installation
+## Installation
 
 The easiest way is to keep colored-reporter as a dependency in your project.clj:
 
@@ -14,7 +14,7 @@ To colorize the output, you have to install [colors](https://www.npmjs.com/packa
 npm install colors@1.1.2 --save-dev
 ```
 
-## use
+## Use
 
 ```clojure
 (:require [cljs.test :refer-macros [run-tests]]
