@@ -4,9 +4,15 @@ An alternative reporter for cljs.test using colors.
 
 ## installation
 
-`[colored-reporter "0.3.0-SNAPSHOT"]`
+The easiest way is to keep colored-reporter as a dependency in your project.clj:
 
-`$ npm install colors@1.1.2`
+[![Clojars Project](http://clojars.org/colored-reporter/latest-version.svg)](http://clojars.org/colored-reporter)
+
+To colorize the output, you have to install [colors](https://www.npmjs.com/package/colors). You can simply do it by:
+
+```
+npm install colors@1.1.2 --save-dev
+```
 
 ## use
 
