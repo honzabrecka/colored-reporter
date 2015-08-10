@@ -1,4 +1,4 @@
-(defproject colored-reporter "0.4.0-SNAPSHOT"
+(defproject colored-reporter "0.4.0"
   :description "An alternative reporter for cljs.test using colors."
   :url "https://github.com/honzabrecka/colored-reporter"
   :license {:name "MIT License"
