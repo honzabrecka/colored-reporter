@@ -2,6 +2,8 @@
 
 An alternative reporter for cljs.test using colors.
 
+![preview output](https://dl.dropboxusercontent.com/u/75480155/colored-reporter.png)
+
 ## Installation
 
 The easiest way is to keep colored-reporter as a dependency in your project.clj:
